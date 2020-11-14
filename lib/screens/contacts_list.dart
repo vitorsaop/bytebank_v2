@@ -87,6 +87,12 @@ class _ContactItem extends StatelessWidget {
           contact.accountNumber.toString(),
           style: TextStyle(fontSize: 16.0),
         ),
+        trailing: IconButton(
+          icon: Icon(Icons.delete),
+          onPressed: (){
+            debugPrint(contact.id.toString());
+          },
+        ),
       ),
     );
   }
